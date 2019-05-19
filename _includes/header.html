@@ -28,10 +28,10 @@
         </div>
 
         <div>
-            <ul margin=0>
+            <ul>
               {% if site.author.facebook_username %}
                 <!-- Facebook -->
-                <li class="navigation__item">
+                <li class="navigation__list__item">
                   <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
                     <i class="icon icon-social-facebook" margin = "10px"></i>
                   </a>
@@ -40,7 +40,7 @@
 
               {% if site.author.linkedin_username %}
                 <!-- LinkedIn -->
-                <li class="navigation__item">
+                <li class="navigation__list__item">
                   <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
                     <i class="icon icon-social-linkedin"></i>
                   </a>
@@ -49,7 +49,7 @@
 
               {% if site.author.github_username %}
                 <!-- GitHub -->
-                <li class="navigation__item">
+                <li class="navigation__list__item">
                   <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
                     <i class="icon icon-social-github"></i>
                   </a>
@@ -58,7 +58,7 @@
 
               {% if site.author.email %}
                 <!-- Email -->
-                <li class="navigation__item">
+                <li class="navigation__list__item">
                   <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
                     <i class="icon icon-mail"></i>
                   </a>

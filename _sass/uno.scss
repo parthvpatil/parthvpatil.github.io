@@ -1320,6 +1320,20 @@ hr {
 		color: #b9301c;
 		border-color: #b9301c; }
 
+.btn, .navigation__list__item a {
+	padding: 10px 20px;
+	border: 1px solid #e25440;
+	border-radius: 20px;
+	font-size: .9em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-shadow: none;
+	color: #e25440;
+	-webkit-font-smoothing: antialiased; }
+	.btn:hover, .navigation__list__item a:hover {
+		color: #b9301c;
+		border-color: #b9301c; }
+
 .btn-secondary {
 	border-color: #5ba4e5;
 	color: #5ba4e5; }
@@ -1385,18 +1399,44 @@ nav {
 		opacity: .8; }
 		.navigation__item a:hover {
 			color: #FFF;
-			border-color: #FFF;
+			border-color: #000;
 			opacity: 1; }
 
-.navigation--social {
-	margin-left: 1.5em; }
-	.navigation--social a {
-		padding: 6px 8px 6px 9px; }
-		.navigation--social a .label {
-			display: none; }
-		.navigation--social a .icon {
-			display: block;
-			font-size: 1.7em; }
+.navigation__list__item {
+	display: inline-block;
+	margin: 0 2px 0 0;
+	line-height: 1em; }
+	.navigation__list__item a {
+		display: block;
+		position: relative;
+		border-color: #FFF;
+		color: #FFF;
+		opacity: .8; }
+		.navigation__list__item a:hover {
+			color: #FFF;
+			border-color: #000;
+			opacity: 1; }
+
+
+
+	// display: inline-block;
+	// margin-left: 1.5em;
+	// margin: 0 2px 0 0;
+	// line-height: 1em;}
+	// .navigation--social a {
+	// 	display: block;
+	// 	padding: 6px 8px 6px 9px;
+	// 	position: relative;
+	// 	border-color: #FFF;
+	// 	color: #FFF;
+	// 	opacity: .8;}
+	// 	.navigation--social a .label {
+	// 		display: none; }
+	// 	.navigation--social a .icon {
+	// 		display: block;
+	// 		border: 10px;
+	// 		border-color: #FFF;
+	// 		font-size: 1.7em; }
 
 .pagination {
 	display: block;
@@ -1665,6 +1705,10 @@ input[type="tel"] {
 
 	.navigation__item {
 		width: 100%;
+		margin: 0 0 .4em 0; }
+
+	.navigation__list__item {
+		width: 10%;
 		margin: 0 0 .4em 0; } }
 @media all and (max-width: 340px) {
 	.panel-main__inner {
@@ -1678,5 +1722,9 @@ input[type="tel"] {
 		font-size: .9em; }
 
 	.btn, .navigation__item a {
+		display: block;
+		margin-bottom: .4em; }
+
+	.btn, .navigation__list__item a {
 		display: block;
 		margin-bottom: .4em; } }
