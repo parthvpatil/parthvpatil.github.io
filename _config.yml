@@ -1,9 +1,9 @@
 # Site settings
 title: Parth Patil
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+description: 'A cool coder who is not socially awkward'
 url: 'http://parthvpatil.github.io/'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-140472706-1'
 # disqus_shortname: 'your-disqus-name'
 
 author:
