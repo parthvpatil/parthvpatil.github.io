@@ -1,17 +1,17 @@
 # Site settings
-title: Jekyll-Uno
+title: Parth Patil
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+url: 'http://parthvpatil.github.io/'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
+  name: 'Parth Patil'
+  email: parthvin@gmail.com
   twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
+  facebook_username: parth.patil.77
+  github_username:  Parth1811
   linkedin_username:  joshgerdes
 
 defaults:
