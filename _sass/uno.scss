@@ -1261,6 +1261,7 @@ hr {
 
 .panel-main__content {
 	max-width: 620px;
+	min-height: 60%;
 	margin: 0 auto; }
 
 .panel-main__content--fixed {
@@ -1636,6 +1637,15 @@ input[type="tel"] {
 	.panel-cover__description {
 		display: block;
 		max-width: 600px;
+		margin: 0 auto; }
+
+	.panel-cover__footer {
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		max-width: 600px;
+		bottom: 0;
 		margin: 0 auto; }
 
 	.panel-cover__divider--secondary {
