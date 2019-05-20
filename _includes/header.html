@@ -6,74 +6,74 @@
 <header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
   <div class="panel-main">
 
-    <div class="panel-main__inner panel-inverted" vertical-align="bottom">
-    <div display="block" vertical-align="bottom">
-      <div class="panel-main__content">
-          <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-            <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
-            <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-          </a>
-          <hr class="panel-cover__divider">
-          <p class="panel-cover__description">{{ site.description }}</p>
-          <hr class="panel-cover__divider panel-cover__divider--secondary">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-          <div class="row-sm-50">
-          <div class="navigation-wrapper">
+        <div class="row-sm-50">
+        <div class="navigation-wrapper">
 
-            <nav class="cover-navigation cover-navigation--primary">
-              <ul class="navigation">
-                <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
-              </ul>
-            </nav>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
 
-          </div>
-          </div>
         </div>
 
+        <div>
+            <ul>
+              {% if site.author.facebook_username %}
+                <!-- Facebook -->
+                <li class="navigation__list__item">
+                  <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                    <i class="icon icon-social-facebook" margin = "10px"></i>
+                  </a>
+                </li>
+              {% endif %}
+
+              {% if site.author.linkedin_username %}
+                <!-- LinkedIn -->
+                <li class="navigation__list__item">
+                  <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                    <i class="icon icon-social-linkedin"></i>
+                  </a>
+                </li>
+              {% endif %}
+
+              {% if site.author.github_username %}
+                <!-- GitHub -->
+                <li class="navigation__list__item">
+                  <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                    <i class="icon icon-social-github"></i>
+                  </a>
+                </li>
+              {% endif %}
+
+              {% if site.author.email %}
+                <!-- Email -->
+                <li class="navigation__list__item">
+                  <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                    <i class="icon icon-mail"></i>
+                  </a>
+                </li>
+              {% endif %}
+
+
+            </ul>
+        </div>
+
+        </div>
       </div>
-      <div align="center" >
-                        <ul position="absolute" bottom="0">
-                          {% if site.author.facebook_username %}
-                            <!-- Facebook -->
-                            <li class="navigation__list__item">
-                              <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                                <i class="icon icon-social-facebook" margin = "10px"></i>
-                              </a>
-                            </li>
-                          {% endif %}
 
-                          {% if site.author.linkedin_username %}
-                            <!-- LinkedIn -->
-                            <li class="navigation__list__item">
-                              <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                                <i class="icon icon-social-linkedin"></i>
-                              </a>
-                            </li>
-                          {% endif %}
-
-                          {% if site.author.github_username %}
-                            <!-- GitHub -->
-                            <li class="navigation__list__item">
-                              <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                                <i class="icon icon-social-github"></i>
-                              </a>
-                            </li>
-                          {% endif %}
-
-                          {% if site.author.email %}
-                            <!-- Email -->
-                            <li class="navigation__list__item">
-                              <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                                <i class="icon icon-mail"></i>
-                              </a>
-                            </li>
-                          {% endif %}
-
-                        </ul>
-                    </div>
     </div>
 
     <div class="panel-cover--overlay"></div>
-
   </div>
 </header>
