@@ -3,7 +3,7 @@ nav {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	background: rgba(255, 255, 255, .9);
+	background: #4dd0e1;
 	z-index: 999;
 
 	a {
@@ -16,11 +16,11 @@ nav {
 		font-size: .9em;
 
 		&.active {
-			color: #888;
+			color: #f44336;
 		}
 
 		&:hover {
-			color: #000;
+			color: #fff;
 		}
 	}
 }
