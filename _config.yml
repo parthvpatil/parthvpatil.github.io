@@ -1,90 +1,36 @@
-# ----
-# Site
-
+# site settings
 title: Parth Patil
-url: "https://parthvpatil.github.io/"
-baseurl:
-google_analytics_key:
-newsletter_action:
-disqus_shortname:
-
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /siteicon.png
-description: Food blog template for Jekyll.
+subtitle: by HTML5 UP
+email: parthvin@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: hhtps://parthvpatil.github.io/
 author:
-  name: Parth Patil
-  email: parthvin@gmail.com
-  # twitter: # twitter username without the @ symbol
-social:
-  name: Github
-  links:
-    - https://github.com/Parth1811
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
 
-# -----
-# Build
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
-timezone: Kolkata
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: https://gitlab.com/u/andrewbanchich
+googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
+instagram_url: https://instagram.com
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/andrewbanchich
 
-paginate: 10
-paginate_path: "/:num/"
-permalink: pretty
+# build settings
+markdown: kramdown
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      push_sidebar_down: true
-      print_stylesheet: true
-      comments: true
-      _options:
-        content:
-          width: 1560
-          height: 2000
-        featured_image:
-          width: 1560
-          height: 2000
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "index.html"
-    values:
-      layout: "default"
-      push_sidebar_down: true
-
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
-
-_options:
-  author_image:
-    width: 250
-    height: 250
+sass:
+  style: compressed
