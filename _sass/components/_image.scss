@@ -54,9 +54,12 @@ img {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;
 			width: 100%;
+      align-content: center;
 
 			img {
 				width: 100%;
+        align-self: center;
+        border-radius: 50%;
 			}
 
 			@include breakpoint(small) {
