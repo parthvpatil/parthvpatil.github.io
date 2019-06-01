@@ -25,6 +25,7 @@ img {
 
 			img {
 				width: 100%;
+        border-radius: 50%;
 			}
 		}
 
@@ -59,7 +60,6 @@ img {
 			img {
 				width: 100%;
         align-self: center;
-        border-radius: 50%;
 			}
 
 			@include breakpoint(small) {
