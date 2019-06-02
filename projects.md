@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: My Projects
 permalink: project
 image_show_on_page: false

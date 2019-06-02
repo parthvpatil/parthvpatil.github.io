@@ -16,7 +16,7 @@ phone: +91 9920385585
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 7
+tiles-count: 6
 
 # social settings
 500px_url:

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: About Me
 permalink: aboutme
 image_show_on_page: false
