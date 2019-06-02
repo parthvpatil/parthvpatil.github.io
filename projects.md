@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About Me
-permalink: aboutme
+title: My Projects
+permalink: project
 image_show_on_page: false
-image: assets/images/profile.jpg
+image: assets/images/project.jpg
 nav-menu: true
 ---
 <p><span class="image right"><img src="assets/images/profile.jpg" alt="" border-radius="50%" /></span>
