@@ -30,9 +30,8 @@
   <section id="two" class="spotlights">
     {% for category in site.categories %}
     	<section>
-    		<a href="generic.html" class="image">
+    		<a href="{{ category[0] }}" class="image">
     			<img src="/assets/images/{{ category[0] }}.jpg" alt="" data-position="center center" />
-    		</a>
     		<div class="content">
     			<div class="inner">
     				<header class="major">
@@ -40,10 +39,11 @@
     				</header>
             <h3> {{ category[1] }} </h3>
     				<ul class="actions">
-    					<li><a href="generic.html" class="button">Learn more</a></li>
+    					<li><a href="{{ category[0] }}" class="button">Learn more</a></li>
     				</ul>
     			</div>
     		</div>
+        </a>
     	</section>
     {% endfor %}
   </section>
