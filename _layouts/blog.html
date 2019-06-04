@@ -29,22 +29,26 @@
   <!-- Two -->
   <section id="two" class="spotlights">
     {% for category in site.categories %}
-    	<section>
-    		<a href="/blog/{{ category[0] }}" class="image">
-    			<img src="/assets/images/{{ category[0] }}.jpg" alt="" data-position="center center" />
-    		<div class="content">
-    			<div class="inner">
-    				<header class="major">
-    					<h3 style= "text-transform: uppercase;">{{ category[0] }}</h3>
-    				</header>
-            <h3> {{ category[1] }} </h3>
-    				<ul class="actions">
-    					<li><a href="/blog/{{ category[0] }}" class="button">Learn more</a></li>
-    				</ul>
-    			</div>
-    		</div>
-        </a>
-    	</section>
+      {% for post in site.posts %}
+        {% if post.category_descriptor == true and post.post_category == category[0] %}
+          <section>
+        		<a href="{{ post.url }}" class="image">
+        			<img src="{{ post.image }}" alt="" data-position="center center" />
+        		<div class="content">
+        			<div class="inner">
+        				<header class="major">
+        					<h3 style= "text-transform: uppercase;">{{ post.title }}</h3>
+        				</header>
+                <h3> {{ post.description }} </h3>
+        				<ul class="actions">
+        					<li><a href="{{ post.url }}" class="button">Learn more</a></li>
+        				</ul>
+        			</div>
+        		</div>
+            </a>
+        	</section>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </section>
 
