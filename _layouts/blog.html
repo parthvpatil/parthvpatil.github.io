@@ -24,17 +24,29 @@
 		</header>
     {{ content }}
 
-    {% for post in site.posts %}
-      {% if post.category == 'blog' %}
-          <a href="{{ post.url }}">{{ post.title }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% for category in site.categories %}
-          <p><a href="#">{{ category[0] }}</a></p>
-    {% endfor %}
   </div>
 
+  <!-- Two -->
+  <section id="two" class="spotlights">
+    {% for category in site.categories %}
+    	<section>
+    		<a href="generic.html" class="image">
+    			<img src="/assets/images/{{ category[0] }}.jpg" alt="" data-position="center center" />
+    		</a>
+    		<div class="content">
+    			<div class="inner">
+    				<header class="major">
+    					<h3 style= "text-transform: uppercase;">{{ category[0] }}</h3>
+    				</header>
+            <h3> {{ category[1] }} </h3>
+    				<ul class="actions">
+    					<li><a href="generic.html" class="button">Learn more</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</section>
+    {% endfor %}
+  </section>
 
 </section>
 
