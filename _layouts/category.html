@@ -32,18 +32,20 @@
         <section>
       		<a href="{{ post.url }}" class="image">
       			<img src="{{ post.image | absolute_url }}" alt="" data-position="center center" />
+          </a>
       		<div class="content">
       			<div class="inner">
+              <a href="{{ post.url }}">
       				<header class="major">
       					<h3 style= "text-transform: uppercase;">{{ post.title }}</h3>
       				</header>
               <h4> {{ post.description }} </h4>
+              </a>
       				<ul class="actions">
       					<li><a href="{{ post.url }}" class="button">Learn more</a></li>
       				</ul>
       			</div>
       		</div>
-          </a>
       	</section>
       {% endif %}
     {% endfor %}
