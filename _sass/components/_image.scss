@@ -35,6 +35,22 @@ img {
 			top: 0.25em;
 		}
 
+    &.left_sq {
+			float: left;
+      height: inherit;
+      max-width: 100%;
+			margin: 0 1.5em 1.25em 0;
+			top: 0.25em;
+		}
+
+    &.right_sq {
+			float: right;
+      height: inherit;
+      max-width: 100%;
+			margin: 0 1.5em 1.25em 0;
+			top: 0.25em;
+		}
+
 		&.right {
 			float: right;
 			margin: 0 0 1.25em 1.5em;
