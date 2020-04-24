@@ -1,0 +1,29 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  vertical-align: center;
+}
+
+
+/* Change background color of buttons on hover */
+// .tab button:hover {
+//   background-color: _palette(border);
+// }
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border: 10px;
+  border-color: white;
+  background-color: _palette(fg-light);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+  padding: inherit;
+  padding-left: 5%;
+  padding-top: 5%;
+  background-color: _palette(bg-alt2);
+  resize: vertical;
+}
