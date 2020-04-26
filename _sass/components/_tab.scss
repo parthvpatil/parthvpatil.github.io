@@ -4,7 +4,12 @@
   vertical-align: center;
 }
 
-
+.tab button{
+  &.nopad{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
 /* Change background color of buttons on hover */
 // .tab button:hover {
 //   background-color: _palette(border);
@@ -22,8 +27,9 @@
   display: none;
   border-top: none;
   padding: inherit;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 2.5%;
   background-color: _palette(bg-alt2);
   resize: vertical;
 }

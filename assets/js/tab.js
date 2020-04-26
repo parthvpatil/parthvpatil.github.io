@@ -1,3 +1,4 @@
+openTab(event, "first_year", 1);
 function openTab(evt, sectionName, level) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
