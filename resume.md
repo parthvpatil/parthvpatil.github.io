@@ -7,4 +7,4 @@ nav-menu: false
 show_tile: false
 ---
 
-<iframe src="{{ site.url }}/assets/files/cv.pdf" width="100%" height="2100px"> </iframe>
+<iframe src="{{ site.url }}/assets/files/resume.pdf" width="100%" height="2100px"> </iframe>
