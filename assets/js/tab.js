@@ -1,3 +1,4 @@
+openTab(null, "path_planning", 1);
 openTab(null, "second_year", 1);
 openTab(null, "ml_tool", 2);
 openTab(null, "2page", 1);
