@@ -2,15 +2,15 @@
 title: Parth Patil
 subtitle: homepage
 email: parthvin@gmail.com
-description: I'm not a great programmer,<br/>I'm a just a good programmer with great habits.
+description: I'm not a great programmer,<br/>I'm a just a programmer with great habits.
 url: https://parthvpatil.github.io
 baseurl: ''
 author:
 
-street_address: Room 3089, Hostel 18, IIT Bombay
-city: Powai
-state: MH
-zip_code: 400076
+# street_address:
+city: Mumbai
+state: MH,
+# zip_code: 400076
 country: India
 phone: +91 9920385585
 
