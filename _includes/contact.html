@@ -5,7 +5,7 @@
 			<header class="major">
 				<h1>Contact Me</h1>
 			</header>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form action="https://formspree.io/f/{{ site.formspree_api }}" method="POST">
 				<div class="field half first">
 					<label for="name">Your Name</label>
 					<input type="text" name="name" id="name" />
@@ -28,9 +28,9 @@
 			<section>
 				<div class="contact-method">
 					<a href="mailto:{{ site.email }}">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					{{ site.email }}
+						<span class="icon alt fa-envelope"></span>
+						<h3>Email</h3>
+						{{ site.email }}
 					</a>
 				</div>
 			</section>
@@ -43,26 +43,26 @@
 			</section>
 			<section>
 				<div class="contact-method">
-					<a href="https://goo.gl/maps/Az7yPNcWG9sDZ1h5A">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }}
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
-					</span>
+					<a href="https://maps.app.goo.gl/ETKnhqTYyKK9Jz7HA">
+						<span class="icon alt fa-home"></span>
+						<h3>Address</h3>
+						<span>
+							{% if site.street_address %}
+							{{ site.street_address }}<br />
+							{% endif %}
+							{% if site.city %}
+							{{ site.city }},
+							{% endif %}
+							{% if site.state %}
+							{{ site.state }}
+							{% endif %}
+							{% if site.zip_code %}
+							{{ site.zip_code }}<br />
+							{% endif %}
+							{% if site.country %}
+							{{ site.country }}
+							{% endif %}
+						</span>
 					</a>
 				</div>
 			</section>

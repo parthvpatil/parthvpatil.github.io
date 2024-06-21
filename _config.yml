@@ -8,14 +8,16 @@ baseurl: ''
 author:
 
 # street_address:
-city: Mumbai
-state: MH,
-# zip_code: 400076
-country: India
-phone: +91 9920385585
+city: Lafayette
+state: IN,
+zip_code: 47904
+country: USA
+phone: +1 765-767-0983
 
 # Google analytics
 analytics_id: 'UA-140472706-1'
+new_analytics_id: 'G-T2B563BH28'
+formspree_api: xeojjedp
 
 # homepage tiles
 tiles-source: posts # accepts "posts" or "pages"

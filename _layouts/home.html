@@ -19,15 +19,20 @@
                 <h1>{{ page.landing-title }}</h1>
             </header>
             <div class="content">
-              <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <p style="text-transform: uppercase;">{{ site.description }}</p>
                 <ul class="actions">
                     <li><a href="#menu" class="button">Explore</a></li>
+                    <li><a href="/cv" class="button">My Resume</a></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Main -->
+    <!-- Preview for me and projects -->
+    <div id="main">
+        {% include preview.html %}
+    </div>
+
     <div id="main">
 
         <!-- One -->

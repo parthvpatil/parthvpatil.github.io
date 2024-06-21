@@ -1,0 +1,67 @@
+<section id="preview">
+    <div class="inner">
+
+        <section id="two" class="spotlights">
+            <section>
+                <a href="/aboutme" class="image">
+                    <img src="assets/images/profile.jpg" alt="" data-position="center center" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <a href="/aboutme">
+                            <header class="major">
+                                <h3 style="text-transform: uppercase;">About Me</h3>
+                            </header>
+                            <h4> Hello! I'm Parth Vinod Patil, a Robotics Engineer with over three years of experience
+                                developing
+                                advanced
+                                autonomous systems. Currently pursuing my Master's in Electrical and Computer
+                                Engineering at Purdue
+                                University. </h4>
+                        </a>
+                        <ul class="actions">
+                            <li><a href="/aboutme" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="major" />
+            <a href="/project">
+                <h1>Project Highlights</h1>
+            </a>
+
+            {% for post in site.posts %}
+            {% if post.category == "project" %}
+            {% if post.highlight %}
+            <section>
+                <a href="{{ post.url }}" class="image">
+                    <img src="{{ post.image | absolute_url }}" alt="" data-position="center center" />
+                </a>
+                <div class="content">
+                    <div class="inner">
+                        <a href="{{ post.url }}">
+                            <header class="major">
+                                <h3 style="text-transform: uppercase;">{{ post.title }}</h3>
+                            </header>
+                            <h4> {{ post.description }} </h4>
+                        </a>
+                        <ul class="actions">
+                            <li><a href="{{ post.url }}" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            <section>
+                <div style="display: flex; justify-content: center;width: 100%;">
+                    <a href="/project"><button class="button">View All Projects</button></a>
+                </div>
+            </section>
+
+        </section>
+
+</section>

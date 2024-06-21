@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Welcome to my homepage'
+landing-title: 'Parth Vinod Patil'
 description: null
 image: null
 author: null
