@@ -1,0 +1,24 @@
+---
+layout: post
+title: My Resume
+permalink: cv-software
+image_show_on_page: false
+image: assets/images/resume.jpg
+nav-menu: false
+show_tile: false
+---
+
+<!-- <div class="tab">
+  <button name="default tab" class="tablinks 1" onclick="openTab(event, '2page', '1')">Two Page</button>
+  <button class="tablinks 1" onclick="openTab(event, '1page', '1')">One Page</button>
+</div> -->
+
+
+<!-- <dive id="2page" class="tabcontent 1" markdown="1">
+    <iframe src="{{ site.url }}/assets/files/cv2page.pdf" width="100%" height="2100px"> </iframe>
+</dive>
+<dive id="1page" class="tabcontent 1" markdown="1">
+    <iframe src="{{ site.url }}/assets/files/cv1page.pdf" width="100%" height="2100px"> </iframe>
+</dive> -->
+
+<iframe src="{{ site.url }}/assets/files/Parth Patil Resume Software.pdf" width="100%" height="2100px"> </iframe>
